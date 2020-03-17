@@ -1,0 +1,227 @@
+
+  
+ <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Spade</title>
+  </head>
+
+<body>
+
+<style>
+  
+   body {
+  background: rgba(0, 0, 0, 0.9);
+  margin: 0;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.showcase::after {
+  content: '';
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1527383418406-f85a3b146499?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  transition: all 1000ms;
+}
+
+.showcase:hover::after {
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+}
+
+.showcase:hover .content {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.content {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 50%;
+  margin-top: 105px;
+  margin-left: -145px;
+  width: 300px;
+  height: 350px;
+  text-align: center;
+  transition: all 1000ms;
+}
+
+.content .logo {
+  height: 180px;
+  width: 180px;
+}
+
+.content .title {
+  font-size: 2.2rem;
+  margin-top: 1rem;
+}
+
+.content .text {
+  line-height: 1.7;
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+  padding: 4rem 1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.bg-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background: #333;
+  color: #f4f4f4;
+}
+
+footer {
+  padding: 2.2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Small Screens */
+@media (max-width: 560px) {
+  .showcase::after {
+    height: 50vh;
+  }
+
+  .content {
+    top: 5%;
+    margin-top: 5px;
+  }
+
+  .content .logo {
+    height: 140px;
+    width: 140px;
+  }
+
+  .content .text {
+    display: none;
+  }
+
+  .grid-3,
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem 1rem;
+  }
+}
+
+/* Landscape */
+@media (max-height: 500px) {
+  .content .title,
+  .content .text {
+    display: none;
+  }
+
+  .content {
+    top: 0;
+  }
+}
+
+</style>
+
+
+  <header class="showcase">
+    <div class="content">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcThQGx1fOCVXsEs1FyJ_6mJT1Bd0CpqhnXzs7AanscPVqp7Elmu" class="logo" alt="Traversy Media">
+      <div class="title">
+        Welcome To Spade
+      </div>
+      <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, vel.
+      </div>
+    </div>
+  </header>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="container grid-3 center">
+      <div>
+        <i class="fas fa-search fa-3x"></i>
+        <h3>Search</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+      </div>
+      <div>
+        <i class="fas fa-shopping-bag fa-3x"></i>
+        <h3>Shop</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+      </div>
+      <div>
+        <i class="fas fa-shopping-cart fa-3x"></i>
+        <h3>Order</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, reiciendis!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about bg-light">
+    <div class="container">
+      <div class="grid-2">
+        <div class="center">
+          <i class="fas fa-laptop fa-10x"></i>
+        </div>
+        <div>
+          <h3>About Us</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non eos aperiam labore consectetur maiores ea magni exercitationem
+            similique laborum sed, unde, autem vel iure doloribus aliquid. Aspernatur explicabo consectetur consequatur non
+            nesciunt debitis quos alias soluta, ratione, ipsa officia reiciendis.</p>
+       <a class="btn btn-primary btn-lg" href="products.jsp">Explore Spade<span style="font-size: 25px; margin-left:10px;">
+         <i class="fab fa-wpexplorer"></i></span>
+       </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="center bg-dark">
+    <p>Spade &copy; 2020</p>
+  </footer>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+</body>
+</html>
